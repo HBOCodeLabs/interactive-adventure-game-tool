@@ -284,6 +284,17 @@
         value={ scene.voice.prompt }></autogrow-textarea>
     </div>
 
+    <div class="input-row">
+      <label for="$voiceReprompt">
+        Override Default Reprompt
+        <small>(Optional)</small>
+      </label>
+      <autogrow-textarea
+        id="$voiceReprompt"
+        onblur={ save }
+        value={ scene.voice.reprompt }></autogrow-textarea>
+    </div>
+    
     <br>
 
     <a class="hotspot float-right"
@@ -398,7 +409,8 @@
 
       this.scene.voice = {
         intro: this.$intro.value.trim(),
-        prompt: this.$voicePrompt.value.trim()
+        prompt: this.$voicePrompt.value.trim(),
+        reprompt: this.$voiceReprompt.value.trim()
       }
 
       var $cardImage = this.$collapsibleCardImage._tag
