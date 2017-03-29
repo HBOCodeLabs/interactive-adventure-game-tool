@@ -110,7 +110,8 @@ this.onClickAddOption = function (e) {
     },
     voice: {
       intro: 'You enter a room. What would you like to do?',
-      prompt: ''
+      prompt: '',
+      reprompt: ''
     },
     options: []
   };
